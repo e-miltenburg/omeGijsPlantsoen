@@ -123,3 +123,6 @@ article footer{
     -webkit-border-radius:3px;
     -webkit-box-shadow: rgba(102,255,204, .7) 10px 10px 15px;
 }
+.test{
+    background:green;
+}
