@@ -1,0 +1,125 @@
+
+*{
+    margin:0px;
+    padding:0px;
+}
+h1{
+    font: bold 20px Tahoma;
+}
+h2{
+    font: bold 14px Tahoma;
+}
+header, section, footer, aside, nav, article, hgroup{
+    display:block;
+}
+body{
+    width:100%;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    background:-webkit-linear-gradient(bottom,red, white,white);
+    background:#6699ff;
+
+}
+#big_wrapper{
+    max-width: 1000px;
+    margin: 20px 0px;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    border: 0px solid black;
+    -webkit-box-flex: 1; /*1 = flexibel en 0 = gefixeerd*/
+    padding: 20px;
+}
+#top_header{
+    //background:#cdc8e4;
+    //background:white;
+    //border: 0px solid black;
+    padding: 1px;
+    text-align: center;
+    //-webkit-border-radius:15px;
+    //-webkit-box-shadow: rgba(255,255,255, .9) 0px 0px 15px;
+
+}
+#top_menu{
+    //border:red;
+    //background:lightblue;
+    color:white;
+    text-align:center;
+    height: 75px;
+
+}
+#top_menu li{
+    display:inline-block;
+    list-style:none;
+    padding:20px;
+    font:bold 24px Tahoma;
+}
+#top_menu ul li a:hover{
+    color:#fff;
+    background:#939393
+}
+#top_menu ul li ul{
+    display: none;
+}
+#top_menu ul li:hover ul{
+    display: block;
+}
+#new_div{
+    display:-webkit-box;
+    -webkit-box-orient:horizontal;
+
+}
+#main_section{
+    //border:1px solid blue;
+    -webkit-box-flex: 1;
+}
+#side_news{
+    //border:1px solid red;
+    width:220px;
+    //height: 400px;
+    padding:20px;
+    margin:20px 0px;
+    background: #cdc8e4;
+    -webkit-box-orient:vertical;
+}
+.sidebar{
+    //border: 1px solid blue;
+    width: 180px;
+    height: 200px;
+}
+#the_footer{
+    text-align:center;
+    padding:20px;
+    //border-top: 2px solid green;
+}
+article{
+    //border: 1px solid red;
+    padding: 10px;
+    margin:5px;
+}
+
+.fotoF{
+    background:#99ff99;
+    width: 600px;
+    padding: 5px 5px 0px 5px;
+    margin:0px 25px 5px 25px;
+    min-height: 455px; 
+    -webkit-border-radius:10px;
+    //border:3px solid blue;
+    -webkit-box-shadow: rgba(110,110,110, .7) 10px 10px 15px;
+}
+.plaatje{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;   
+}
+
+article footer{
+    text-align: right;
+    font-style: italic;
+}
+.referrals{
+    background:#66ffcc;
+    margin:20px;
+    -webkit-border-radius:3px;
+    -webkit-box-shadow: rgba(102,255,204, .7) 10px 10px 15px;
+}
