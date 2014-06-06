@@ -1,30 +1,32 @@
-
 *{
     margin:0px;
     padding:0px;
 }
+/*standard text formatting*/
 h1{
     font: bold 20px Tahoma;
 }
 h2{
     font: bold 14px Tahoma;
 }
+/*compatibility for older browsers*/
 header, section, footer, aside, nav, article, hgroup{
     display:block;
 }
+/*standard configuration for site setup*/
 body{
     width:100%;
     display: -webkit-box;
     -webkit-box-pack: center;
+    background: #0186ba; /*background next to background image*/
     background-image:url('images/background.JPG');
-
+    background-position: center;
+    background-repeat: repeat-y;
 }
 #big_wrapper{
     max-width: 1000px;
-    margin: 20px 0px;
     display:-webkit-box;
     -webkit-box-orient:vertical;
-    border: 0px solid black;
     -webkit-box-flex: 1; /*1 = flexibel en 0 = gefixeerd*/
     padding: 20px;
     -webkit-border-radius: 10px;
@@ -32,42 +34,50 @@ body{
 #top_header{
     padding: 1px;
     text-align: center;
-
-}
-#new_div{
-    display:-webkit-box;
-    -webkit-box-orient:horizontal;
-
 }
 #main_section{
-    //border:1px solid blue;
     -webkit-box-flex: 1;
     background: #cccccc;
-    /*opacity:0.6;*/
-    border: 2px solid black;
-    -webkit-border-radius: 10px;
-}
-#the_footer{
-    text-align:center;
-    padding:20px;
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;    
 }
 article{
-    padding: 10px;
+    padding: 5px;
     margin:5px;
 }
-
-.fotoF{
-    background:#99ff99;
+/*------------------------------------------------------------------------------
+-------------------------------------Footer-------------------------------------
+------------------------------------------------------------------------------*/
+footer{
+    text-align:center;
+    padding:20px;
+    -webkit-border-bottom-left-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    background-color: black;
+    opacity: 0.4; 
+}
+footer p{
+    color:white;
+}
+/*------------------------------------------------------------------------------
+------------------------------Standard articles---------------------------------
+------------------------------------------------------------------------------*/
+.evenement{
+    width:100%;
+    height:100%;   
+}
+.foto{
+    background:grey;
     width: 400px;
     padding: 5px 5px 0px 5px;
-    margin:0px 25px 5px 25px;
+    margin:0px 5px 5px 5px;
     -webkit-border-radius:3px;
+    float:left;   
 }
 .image{
     max-width: 100%;
     max-height: 100%;
 }
-
 /*------------------------------------------------------------------------------
 -------------------------------------menu---------------------------------------
 ------------------------------------------------------------------------------*/
@@ -105,7 +115,6 @@ article{
     box-shadow: 1px 0 0 #444;
     position: relative;
 }
-
 #menu a {
     float: left;
     padding: 12px 30px;
@@ -115,11 +124,9 @@ article{
     text-decoration: none;
     text-shadow: 0 1px 0 #000;
 }
-
 #menu li:hover > a {
     color: #fafafa;
 }
-
 *html #menu li a:hover { /* IE6 only */
     color: #fafafa;
 }
@@ -138,13 +145,11 @@ article{
     border-radius: 3px;
     transition: all .2s ease-in-out;
 }
-
 #menu li:hover > ul {
     opacity: 1;
     visibility: visible;
     margin: 0;
 }
-
 #menu ul ul {
     top: 0;
     left: 150px;
@@ -152,7 +157,6 @@ article{
     _margin: 0; /*IE6 only*/
     box-shadow: -1px 0 0 rgba(255,255,255,.3);      
 }
-
 #menu ul li {
     float: none;
     display: block;
@@ -160,11 +164,9 @@ article{
     _line-height: 0; /*IE6 only*/
     box-shadow: 0 1px 0 #111, 0 2px 0 #666;
 }
-
 #menu ul li:last-child {   
     box-shadow: none;    
 }
-
 #menu ul a {    
     padding: 10px;
     width: 130px;
@@ -174,7 +176,6 @@ article{
     float: none;
     text-transform: none;
 }
-
 #menu ul a:hover {
     background-color: #0186ba;
     background-image: linear-gradient(#04acec, #0186ba);
@@ -182,7 +183,6 @@ article{
 #menu ul li:first-child > a {
     border-radius: 3px 3px 0 0;
 }
-
 #menu ul li:first-child > a:after {
     content: '';
     position: absolute;
@@ -192,7 +192,6 @@ article{
     border-right: 6px solid transparent;
     border-bottom: 6px solid #444;
 }
-
 #menu ul ul li:first-child a:after {
     left: -6px;
     top: 50%;
@@ -202,19 +201,13 @@ article{
     border-top: 6px solid transparent;
     border-right: 6px solid #3b3b3b;
 }
-
 #menu ul li:first-child a:hover:after {
     border-bottom-color: #04acec; 
 }
-
 #menu ul ul li:first-child a:hover:after {
     border-right-color: #0299d3; 
     border-bottom-color: transparent;   
 }
-
 #menu ul li:last-child > a {
     border-radius: 0 0 3px 3px;
 }
-/*------------------------------------------------------------------------------
-------------------------------------------/menu---------------------------------
-------------------------------------------------------------------------------*/
