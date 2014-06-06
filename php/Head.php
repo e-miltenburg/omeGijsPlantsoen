@@ -1,7 +1,7 @@
 
                 <?php
                 
-                    echo '<img src="Images/headerimage.jpg" alt="site header" width=100%>';
+                   // echo '<img src="Images/headerimage.jpg" alt="site header" width=100%>';
                    
                 ?>
 
